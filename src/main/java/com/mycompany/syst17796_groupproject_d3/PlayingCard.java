@@ -8,8 +8,17 @@ package com.mycompany.syst17796_groupproject_d3;
  *
  * @author gurvir
  */
-//Card class
-public abstract class Card {
+class PlayingCard extends Card {
+    private final String rank;
+    private final String suit;
+
+    public PlayingCard(String rank, String suit) {
+        this.rank = rank;
+        this.suit = suit;
+    }
+
     @Override
-    public abstract String toString();
+    public String toString() {
+        return rank + " of " + suit;
+    }
 }
