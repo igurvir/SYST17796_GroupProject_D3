@@ -53,7 +53,7 @@ public class WarGameTest {
         warGame.getPlayers().add(player1);
         warGame.getPlayers().add(player2);
         warGame.play();
-        // Assuming that the play method doesn't throw any exceptions and the game ends without errors
+       
         assertTrue(true);
     }
 
@@ -64,7 +64,7 @@ public class WarGameTest {
         player1.drawCard(new PlayingCard("10", "Hearts"));
         player2.drawCard(new PlayingCard("7", "Clubs"));
         warGame.declareWinner();
-        // Assuming that the declareWinner method doesn't throw any exceptions
+      
         assertTrue(true);
     }
 
